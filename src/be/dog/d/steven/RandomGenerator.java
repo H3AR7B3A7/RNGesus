@@ -16,7 +16,7 @@ public class RandomGenerator {
         this.size = size;
     }
 
-    public ArrayList<Integer> getRandomList() {
+    private ArrayList<Integer> getRandomList() {
         randomList = new ArrayList<>();
 
         for (int i = 1; i <= size; i++) {
@@ -35,7 +35,7 @@ public class RandomGenerator {
         return randomList.remove(0).toString();
     }
 
-    public String readNextRandomAndShuffle() {
+    public String nextRandom() {
         int next = r.nextInt(size) + 1;
         if (last != next) {
             last = next;

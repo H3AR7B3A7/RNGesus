@@ -74,7 +74,7 @@ public class RNGesusController implements Initializable {
         if (cbRepeat.isSelected()) {
             t = new Text(rl.readAndRemoveNextRandom());
         } else {
-            t = new Text(rl.readNextRandomAndShuffle());
+            t = new Text(rl.nextRandom());
         }
         t.setFont(Font.font("Verdana", 80));
         t.fillProperty().setValue(Paint.valueOf("white"));
