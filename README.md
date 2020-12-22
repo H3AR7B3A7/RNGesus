@@ -1,4 +1,4 @@
-#RNGesus
+# RNGesus
 The random number generator for streamers and giveaways.  
 Licensed under the [Apache license](LICENSE).
 
