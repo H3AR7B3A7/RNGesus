@@ -3,6 +3,7 @@ package be.dog.d.steven;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -43,6 +44,8 @@ public class RNGesusController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         rl = new RandomList(10);
+        tfTime.setDisable(true);
+        tfAmount.setDisable(true);
     }
 
     @FXML
@@ -82,12 +85,21 @@ public class RNGesusController implements Initializable {
         rl = new RandomList(Integer.parseInt(tfSize.getText()));
     }
 
-
     public void timeChangedHandler() {
         timeInSeconds = Integer.parseInt(tfTime.getText());
     }
 
     public void amountChangedHandler() {
         amount = Integer.parseInt((tfAmount.getText()));
+    }
+
+    public void cbTimerChangedHandler(ActionEvent actionEvent) {
+        if(cbTimer.isSelected()){
+            tfTime.setDisable(false);
+            tfAmount.setDisable(false);
+        }else{
+            tfTime.setDisable(true);
+            tfAmount.setDisable(true);
+        }
     }
 }
