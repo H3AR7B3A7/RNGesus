@@ -2,7 +2,7 @@
 The random number generator for streamers and giveaways. ([Download](https://github.com/H3AR7B3A7/RNGesus/releases/download/1.0/RNGesus.exe))  
 Licensed under the [Apache license](LICENSE).
 
-<img src="RNGesus.png" alt="RNGesus">
+<img src="RNGesusExample.png" alt="RNGesus">
 
 ## RNGesus options
 - **Max**: The highest number that can be generated
