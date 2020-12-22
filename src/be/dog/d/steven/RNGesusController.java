@@ -35,7 +35,7 @@ public class RNGesusController implements Initializable {
 
     @FXML private CheckBox cbRepeat;
 
-    RandomList rl;
+    RandomGenerator rl;
     Text t = new Text();
     int timeInSeconds = 5;
     Timeline timeline = new Timeline();
@@ -43,7 +43,7 @@ public class RNGesusController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        rl = new RandomList(10);
+        rl = new RandomGenerator(10);
         tfTime.setDisable(true);
         tfAmount.setDisable(true);
     }
@@ -83,7 +83,7 @@ public class RNGesusController implements Initializable {
     }
 
     public void sizeChangedHandler() {
-        rl = new RandomList(Integer.parseInt(tfSize.getText()));
+        rl = new RandomGenerator(Integer.parseInt(tfSize.getText()));
     }
 
     public void timeChangedHandler() {
