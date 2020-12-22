@@ -61,8 +61,9 @@ public class RNGesusController implements Initializable {
         }else{
             if(!timeline.getStatus().equals(Animation.Status.RUNNING)) {
                 if (cbTimer.isSelected()) {
+                    generateNewRandom();
                     timeline = new Timeline(new KeyFrame(Duration.seconds(timeInSeconds), actionEvent -> generateNewRandom()));
-                    timeline.setCycleCount(amount);
+                    timeline.setCycleCount(amount-1);
                     timeline.play();
                 }
             }
