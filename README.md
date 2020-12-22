@@ -1,5 +1,5 @@
 # RNGesus
-The random number generator for streamers and giveaways. ([Download](https://github.com/H3AR7B3A7/RNGesus/releases/download/1.0/RNGesus.exe))  
+The random number generator for streamers and giveaways. ([Download](https://github.com/H3AR7B3A7/RNGesus/releases/download/v1.1/RNGesus.exe))  
 Licensed under the [Apache license](LICENSE).
 
 <img src="RNGesusExample.png" alt="RNGesus">
