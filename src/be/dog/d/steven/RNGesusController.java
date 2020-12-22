@@ -101,6 +101,7 @@ public class RNGesusController implements Initializable {
         }else{
             tfTime.setDisable(true);
             tfAmount.setDisable(true);
+            timeline.stop();
         }
     }
 }
