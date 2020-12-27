@@ -41,7 +41,7 @@ public class RandomGenerator {
             last = next;
             return String.valueOf(next);
         } else {
-            if (next + 1 < size) {
+            if (next < size) {
                 last = next + 1;
                 return String.valueOf(next + 1);
             } else {
